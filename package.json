@@ -15,7 +15,8 @@
     "dev:start": "fastify start --ignore-watch=.ts$ -w -l info -P dist/app.js",
     "format": "biome format --write",
     "lint": "biome lint --write",
-    "check": "biome check --write"
+    "check": "biome check --write",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -35,6 +36,8 @@
     "c8": "^10.1.2",
     "concurrently": "^9.0.0",
     "fastify-tsconfig": "^3.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
     "ts-node": "^10.4.0",
     "typescript": "~5.8.2"
   }
